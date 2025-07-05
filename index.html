@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>My Web Playground</h1>
+    <nav>
+      <a href="#about" class="active">About</a>
+      <a href="#todo">To‑Do App</a>
+      <a href="#products">Products</a>
+    </nav>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Sanjana, a web developer passionate about crafting clean and interactive web experiences.</p>
+    <h3>Projects</h3>
+    <div class="project-list">
+      <div class="card">
+        <h4>Weather App</h4>
+        <p>A Python CLI / Flask app that fetches real‑time weather from OpenWeatherMap using <code>requests</code> and shows temperature, humidity &amp; conditions. Built with clean API handling and ready for deployment.</p>
+      </div>
+      <div class="card">
+        <h4>To-Do List</h4>
+        <p>A lightweight, responsive task manager written in vanilla JavaScript. Stores tasks in <code>localStorage</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- To‑Do Section -->
+  <section id="todo">
+    <h2>To‑Do List</h2>
+    <p>Simple task manager using <code>localStorage</code>. Click a task to remove it.</p>
+    <input type="text" id="taskInput" placeholder="Add a task" />
+    <button id="addBtn">Add</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Product Section -->
+  <section id="products">
+    <h2>Product Listing</h2>
+    <div id="controls">
+      <select id="categorySelect" onchange="filterAndSort()">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="home">Home</option>
+        <option value="sport">Sport</option>
+      </select>
+      <select id="sortSelect" onchange="filterAndSort()">
+        <option value="price">Sort by Price (Low→High)</option>
+        <option value="rating">Sort by Rating (Low→High)</option>
+      </select>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+<script src="script.js"></script>
+</body>
+
+</html>
