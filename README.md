@@ -30,6 +30,6 @@ This project combines **HTML**, **CSS**, and **JavaScript** to build a fully fun
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3 (Responsive Layout, Variables, Flexbox/Grid)
+- HTML
+- CSS (Responsive Layout, Variables, Flexbox/Grid)
 - JavaScript (DOM Manipulation, localStorage)
